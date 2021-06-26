@@ -13,6 +13,7 @@
 		E53BD17B26856B44007E3915 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53BD17A26856B44007E3915 /* Preview Assets.xcassets */; };
 		E53BD18626856B44007E3915 /* SlokinTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD18526856B44007E3915 /* SlokinTimerTests.swift */; };
 		E53BD19126856B44007E3915 /* SlokinTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */; };
+		E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD1A12685E1AD007E3915 /* TimeHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		E53BD18C26856B44007E3915 /* SlokinTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlokinTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlokinTimerUITests.swift; sourceTree = "<group>"; };
 		E53BD19226856B44007E3915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53BD1A12685E1AD007E3915 /* TimeHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				E53BD17726856B44007E3915 /* Assets.xcassets */,
 				E53BD17C26856B44007E3915 /* Info.plist */,
 				E53BD17926856B44007E3915 /* Preview Content */,
+				E53BD1A12685E1AD007E3915 /* TimeHolder.swift */,
 			);
 			path = SlokinTimer;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				E53BD17626856B43007E3915 /* ContentView.swift in Sources */,
 				E53BD17426856B43007E3915 /* SlokinTimerApp.swift in Sources */,
+				E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

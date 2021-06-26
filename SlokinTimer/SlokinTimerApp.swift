@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SlokinTimerApp: App {
+    @StateObject private var timeHolder = TimeHolder()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(timeHolder)
         }
     }
 }
