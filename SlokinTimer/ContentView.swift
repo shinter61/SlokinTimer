@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var timeHolder: TimeHolder
+
     var body: some View {
         VStack {
-            Button("Start") { timeHolder.start() }
             Text(String(timeHolder.current))
                 .padding()
         }
+        .onAppear { timeHolder.start() }
     }
 }
 
