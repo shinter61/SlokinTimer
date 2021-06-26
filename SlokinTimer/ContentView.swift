@@ -27,8 +27,21 @@ struct ContentView: View {
                         .fontWeight(.bold)
                 }
             }
+            Button(action: {
+                timeHolder.reset()
+            }) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .fill(Color.yellow)
+                        .frame(width: 180, height: 50)
+                    Text("リセット")
+                        .foregroundColor(.white)
+                        .font(.custom("Shippori Mincho", size: 24))
+                        .fontWeight(.bold)
+                }
+            }
         }
-//        .onAppear { timeHolder.start() }
+        .onAppear { timeHolder.start() }
     }
 }
 

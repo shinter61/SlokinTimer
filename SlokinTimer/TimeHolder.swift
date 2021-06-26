@@ -12,8 +12,13 @@ final class TimeHolder: ObservableObject {
     @Published var timer: Timer!
     @Published var current: String = ""
     @Published var startTime: String = ""
+    
+    let startTimeKey = "start_time_key"
 
     func start() {
+        let startString = UserDefaults.standard.string(forKey: self.startTimeKey) ?? ""
+        if (startString == "") { return }
+        
         self.timer?.invalidate()
         self.timer = Timer.scheduledTimer(withTimeInterval: 1/60, repeats: true) { _ in
             var calendar = Calendar.current
@@ -23,7 +28,7 @@ final class TimeHolder: ObservableObject {
             formatter.locale = Locale(identifier: "ja_JP")
             formatter.dateFormat = "yy/MM/dd HH:mm:ss"
             let currentTime: Date = Date()
-            let startTimeDate: Date = formatter.date(from: self.startTime)!
+            let startTimeDate: Date = formatter.date(from: startString)!
             
             let diffFormatter = DateComponentsFormatter()
             diffFormatter.calendar = calendar
@@ -39,7 +44,13 @@ final class TimeHolder: ObservableObject {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "ja_JP")
         formatter.dateFormat = "yy/MM/dd HH:mm:ss"
-        self.startTime = formatter.string(from: currentTime)
+        let currentString = formatter.string(from: currentTime)
+        UserDefaults.standard.set(currentString, forKey: self.startTimeKey)
         self.start()
+    }
+    
+    func reset() {
+        UserDefaults.standard.removeObject(forKey: self.startTimeKey)
+        self.timer?.invalidate()
     }
 }
