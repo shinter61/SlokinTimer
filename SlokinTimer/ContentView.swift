@@ -11,34 +11,39 @@ struct ContentView: View {
     @EnvironmentObject var timeHolder: TimeHolder
 
     var body: some View {
-        VStack {
-            Text(String(timeHolder.current))
-                .padding()
-            Button(action: {
-                timeHolder.set()
-            }) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .fill(Color.yellow)
-                        .frame(width: 180, height: 50)
-                    Text("スロ禁開始")
-                        .foregroundColor(.white)
-                        .font(.custom("Shippori Mincho", size: 24))
-                        .fontWeight(.bold)
+        GeometryReader { geometry in
+            VStack {
+                Text(String(timeHolder.current))
+                    .padding()
+                Button(action: {
+                    timeHolder.set()
+                }) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .fill(Color.yellow)
+                            .frame(width: 180, height: 50)
+                        Text("スロ禁開始")
+                            .foregroundColor(.white)
+                            .font(.custom("Shippori Mincho", size: 24))
+                            .fontWeight(.bold)
+                    }
                 }
-            }
-            Button(action: {
-                timeHolder.reset()
-            }) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .fill(Color.yellow)
-                        .frame(width: 180, height: 50)
-                    Text("リセット")
-                        .foregroundColor(.white)
-                        .font(.custom("Shippori Mincho", size: 24))
-                        .fontWeight(.bold)
+                Button(action: {
+                    timeHolder.reset()
+                }) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .fill(Color.yellow)
+                            .frame(width: 180, height: 50)
+                        Text("リセット")
+                            .foregroundColor(.white)
+                            .font(.custom("Shippori Mincho", size: 24))
+                            .fontWeight(.bold)
+                    }
                 }
+                Spacer()
+                Footer()
+                    .frame(width: geometry.size.width, height: 60)
             }
         }
         .onAppear { timeHolder.start() }

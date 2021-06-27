@@ -6,6 +6,7 @@ target 'SlokinTimer' do
   use_frameworks!
 
   # Pods for SlokinTimer
+  pod 'MaterialComponents'
 
   target 'SlokinTimerTests' do
     inherit! :search_paths

@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AADC95D82D47C4B41C4E373 /* Pods_SlokinTimer_SlokinTimerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5016025B4B284D2BF2B70 /* Pods_SlokinTimer_SlokinTimerUITests.framework */; };
+		7738621963118E92AD42BF47 /* Pods_SlokinTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4092C271D7ED0CE2916AEE7F /* Pods_SlokinTimer.framework */; };
+		A013B66BF9DD4603D77EFEE2 /* Pods_SlokinTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F64FA9F60549A8B4F34440B /* Pods_SlokinTimerTests.framework */; };
 		E53BD17426856B43007E3915 /* SlokinTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD17326856B43007E3915 /* SlokinTimerApp.swift */; };
 		E53BD17626856B43007E3915 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD17526856B43007E3915 /* ContentView.swift */; };
 		E53BD17826856B44007E3915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53BD17726856B44007E3915 /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 		E53BD18626856B44007E3915 /* SlokinTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD18526856B44007E3915 /* SlokinTimerTests.swift */; };
 		E53BD19126856B44007E3915 /* SlokinTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */; };
 		E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD1A12685E1AD007E3915 /* TimeHolder.swift */; };
+		E5CFC2282688538F00F746D5 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC2272688538F00F746D5 /* Footer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2072190127C5E3D7E473C30C /* Pods-SlokinTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlokinTimerTests.release.xcconfig"; path = "Target Support Files/Pods-SlokinTimerTests/Pods-SlokinTimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		373BBC93AE967C16D5D5B6F7 /* Pods-SlokinTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlokinTimerTests.debug.xcconfig"; path = "Target Support Files/Pods-SlokinTimerTests/Pods-SlokinTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4092C271D7ED0CE2916AEE7F /* Pods_SlokinTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlokinTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4370991C1A2B9B36C4D418A8 /* Pods-SlokinTimer-SlokinTimerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlokinTimer-SlokinTimerUITests.release.xcconfig"; path = "Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4530BA6142E08CA3C15A7EBF /* Pods-SlokinTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlokinTimer.release.xcconfig"; path = "Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer.release.xcconfig"; sourceTree = "<group>"; };
+		4CC5016025B4B284D2BF2B70 /* Pods_SlokinTimer_SlokinTimerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlokinTimer_SlokinTimerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F64FA9F60549A8B4F34440B /* Pods_SlokinTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlokinTimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BA407F4D2E85A6A60E246A /* Pods-SlokinTimer-SlokinTimerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlokinTimer-SlokinTimerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D10E93762254EFD296FCBEBB /* Pods-SlokinTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlokinTimer.debug.xcconfig"; path = "Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		E53BD17026856B43007E3915 /* SlokinTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlokinTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53BD17326856B43007E3915 /* SlokinTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlokinTimerApp.swift; sourceTree = "<group>"; };
 		E53BD17526856B43007E3915 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlokinTimerUITests.swift; sourceTree = "<group>"; };
 		E53BD19226856B44007E3915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53BD1A12685E1AD007E3915 /* TimeHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHolder.swift; sourceTree = "<group>"; };
+		E5CFC2272688538F00F746D5 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7738621963118E92AD42BF47 /* Pods_SlokinTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A013B66BF9DD4603D77EFEE2 /* Pods_SlokinTimerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AADC95D82D47C4B41C4E373 /* Pods_SlokinTimer_SlokinTimerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300EEB9B9046C4CBFAE73E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4092C271D7ED0CE2916AEE7F /* Pods_SlokinTimer.framework */,
+				4CC5016025B4B284D2BF2B70 /* Pods_SlokinTimer_SlokinTimerUITests.framework */,
+				6F64FA9F60549A8B4F34440B /* Pods_SlokinTimerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC636E7829A67DFFA9A38CF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D10E93762254EFD296FCBEBB /* Pods-SlokinTimer.debug.xcconfig */,
+				4530BA6142E08CA3C15A7EBF /* Pods-SlokinTimer.release.xcconfig */,
+				95BA407F4D2E85A6A60E246A /* Pods-SlokinTimer-SlokinTimerUITests.debug.xcconfig */,
+				4370991C1A2B9B36C4D418A8 /* Pods-SlokinTimer-SlokinTimerUITests.release.xcconfig */,
+				373BBC93AE967C16D5D5B6F7 /* Pods-SlokinTimerTests.debug.xcconfig */,
+				2072190127C5E3D7E473C30C /* Pods-SlokinTimerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E53BD16726856B43007E3915 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				E53BD18426856B44007E3915 /* SlokinTimerTests */,
 				E53BD18F26856B44007E3915 /* SlokinTimerUITests */,
 				E53BD17126856B43007E3915 /* Products */,
+				DC636E7829A67DFFA9A38CF9 /* Pods */,
+				300EEB9B9046C4CBFAE73E8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +145,7 @@
 				E53BD17C26856B44007E3915 /* Info.plist */,
 				E53BD17926856B44007E3915 /* Preview Content */,
 				E53BD1A12685E1AD007E3915 /* TimeHolder.swift */,
+				E5CFC2272688538F00F746D5 /* Footer.swift */,
 			);
 			path = SlokinTimer;
 			sourceTree = "<group>";
@@ -140,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E53BD19526856B44007E3915 /* Build configuration list for PBXNativeTarget "SlokinTimer" */;
 			buildPhases = (
+				D5669A57CE835F8673C78DA4 /* [CP] Check Pods Manifest.lock */,
 				E53BD16C26856B43007E3915 /* Sources */,
 				E53BD16D26856B43007E3915 /* Frameworks */,
 				E53BD16E26856B43007E3915 /* Resources */,
+				EBF93F3D18CCF006F7AD20CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E53BD19826856B44007E3915 /* Build configuration list for PBXNativeTarget "SlokinTimerTests" */;
 			buildPhases = (
+				E103D55D2EC38AB8399D49F4 /* [CP] Check Pods Manifest.lock */,
 				E53BD17D26856B44007E3915 /* Sources */,
 				E53BD17E26856B44007E3915 /* Frameworks */,
 				E53BD17F26856B44007E3915 /* Resources */,
@@ -175,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E53BD19B26856B44007E3915 /* Build configuration list for PBXNativeTarget "SlokinTimerUITests" */;
 			buildPhases = (
+				0C829815B74D66AF18002313 /* [CP] Check Pods Manifest.lock */,
 				E53BD18826856B44007E3915 /* Sources */,
 				E53BD18926856B44007E3915 /* Frameworks */,
 				E53BD18A26856B44007E3915 /* Resources */,
+				609A4DFCA0F9938A1BFE5913 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +305,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C829815B74D66AF18002313 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlokinTimer-SlokinTimerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		609A4DFCA0F9938A1BFE5913 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5669A57CE835F8673C78DA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlokinTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E103D55D2EC38AB8399D49F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlokinTimerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF93F3D18CCF006F7AD20CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E53BD16C26856B43007E3915 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +415,7 @@
 			files = (
 				E53BD17626856B43007E3915 /* ContentView.swift in Sources */,
 				E53BD17426856B43007E3915 /* SlokinTimerApp.swift in Sources */,
+				E5CFC2282688538F00F746D5 /* Footer.swift in Sources */,
 				E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +570,7 @@
 		};
 		E53BD19626856B44007E3915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10E93762254EFD296FCBEBB /* Pods-SlokinTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +592,7 @@
 		};
 		E53BD19726856B44007E3915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4530BA6142E08CA3C15A7EBF /* Pods-SlokinTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +614,7 @@
 		};
 		E53BD19926856B44007E3915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373BBC93AE967C16D5D5B6F7 /* Pods-SlokinTimerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -481,6 +636,7 @@
 		};
 		E53BD19A26856B44007E3915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2072190127C5E3D7E473C30C /* Pods-SlokinTimerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +658,7 @@
 		};
 		E53BD19C26856B44007E3915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BA407F4D2E85A6A60E246A /* Pods-SlokinTimer-SlokinTimerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +678,7 @@
 		};
 		E53BD19D26856B44007E3915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4370991C1A2B9B36C4D418A8 /* Pods-SlokinTimer-SlokinTimerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
