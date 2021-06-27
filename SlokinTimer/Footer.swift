@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 import MaterialComponents.MaterialBottomNavigation
 
 struct Footer: UIViewRepresentable {

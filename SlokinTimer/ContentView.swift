@@ -13,34 +13,13 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                Text(String(timeHolder.current))
+                Text("スロ禁タイマー")
+                    .font(.system(size: 44, weight: .black, design: .default))
+                    .gradientForeground(colors: [.red, .orange, .yellow, .green, .blue, .purple])
                     .padding()
-                Button(action: {
-                    timeHolder.set()
-                }) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 25.0)
-                            .fill(Color.yellow)
-                            .frame(width: 180, height: 50)
-                        Text("スロ禁開始")
-                            .foregroundColor(.white)
-                            .font(.custom("Shippori Mincho", size: 24))
-                            .fontWeight(.bold)
-                    }
-                }
-                Button(action: {
-                    timeHolder.reset()
-                }) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 25.0)
-                            .fill(Color.yellow)
-                            .frame(width: 180, height: 50)
-                        Text("リセット")
-                            .foregroundColor(.white)
-                            .font(.custom("Shippori Mincho", size: 24))
-                            .fontWeight(.bold)
-                    }
-                }
+                    .padding(.bottom, 50)
+                    .padding(.top, 50)
+                TimerView()
                 Spacer()
                 Footer()
                     .frame(width: geometry.size.width, height: 60)
@@ -49,6 +28,16 @@ struct ContentView: View {
         .onAppear { timeHolder.start() }
     }
 }
+
+extension View {
+    public func gradientForeground(colors: [Color]) -> some View {
+        self.overlay(LinearGradient(gradient: .init(colors: colors),
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing))
+            .mask(self)
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
