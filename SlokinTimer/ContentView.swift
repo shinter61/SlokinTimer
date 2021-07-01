@@ -46,7 +46,7 @@ struct ContentView: View {
                             }
                             .padding()
                         }
-                        .tag(2)
+                        .tag(3)
                 }
             }
         }
