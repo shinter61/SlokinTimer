@@ -22,7 +22,6 @@ struct ContentView: View {
                 TimerView()
                 Spacer()
                 Footer()
-                    .frame(width: geometry.size.width, height: 60)
             }
         }
         .onAppear { timeHolder.start() }

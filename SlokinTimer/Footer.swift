@@ -2,36 +2,38 @@
 //  Footer.swift
 //  SlokinTimer
 //
-//  Created by 松本真太朗 on 2021/06/27.
+//  Created by 松本真太朗 on 2021/06/29.
 //
 
 import SwiftUI
-import MaterialComponents.MaterialBottomNavigation
 
-struct Footer: UIViewRepresentable {
-    func makeUIView(context: Context) -> MDCBottomNavigationBar {
-        let bottomNavBar = MDCBottomNavigationBar()
-        bottomNavBar.titleVisibility = MDCBottomNavigationBarTitleVisibility(rawValue: 1)!
-        bottomNavBar.alignment = MDCBottomNavigationBarAlignment(rawValue: 1)!
-        let timerItem = UITabBarItem(
-            title: "タイマー",
-            image: UIImage(),
-            tag: 0)
-        let recordItem = UITabBarItem(
-            title: "記録",
-            image: UIImage(),
-            tag: 0)
-        let titleItem = UITabBarItem(
-            title: "称号",
-            image: UIImage(),
-            tag: 0)
-        bottomNavBar.itemTitleFont = UIFont(name: "ヒラギノ角ゴ ProN", size: 16)!
-        bottomNavBar.items = [timerItem, recordItem, titleItem]
-        bottomNavBar.selectedItem = recordItem
-        return bottomNavBar
-    }
-    
-    func updateUIView(_ uiView: MDCBottomNavigationBar, context: Context) {
+struct Footer: View {
+    var body: some View {
+        HStack {
+            Button(action: {
+
+            }) {
+                Text("タイマー")
+                    .frame(width: UIScreen.main.bounds.size.width / 3, height: 70, alignment: .center)
+                    .padding(-7.0)
+            }
+            Button(action: {
+
+            }) {
+                Text("記録")
+                    .frame(width: UIScreen.main.bounds.size.width / 3, height: 70, alignment: .center)
+                    .padding(-7.0)
+            }
+            Button(action: {
+
+            }) {
+                Text("称号")
+                    .frame(width: UIScreen.main.bounds.size.width / 3, height: 70, alignment: .center)
+                    .padding(-7.0)
+            }
+        }
+        .frame(maxWidth: .infinity, minHeight: 70)
+        .background(Rectangle().fill(Color.white).shadow(color: .gray, radius: 5, x: 0, y: -2))
     }
 }
 

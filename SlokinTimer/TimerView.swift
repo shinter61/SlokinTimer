@@ -14,14 +14,32 @@ struct TimerView: View {
         VStack {
             Text(String(timeHolder.current))
                 .gradientForeground(colors: [Color(red: 182/255, green: 123/255, blue: 3/255), Color(red: 240/255, green: 215/255, blue: 8/255)])
-                .font(.system(size: 40, weight: .bold, design: .serif))
+                .font(.system(size: 32, weight: .bold, design: .serif))
                 .padding()
                 .padding(.bottom, 50)
-            MaterialButton("スロ禁開始") { timeHolder.set() }
+            Button(action: {
+                timeHolder.set()
+            }) {
+                ZStack {
+                    Rectangle()
+                        .fill(Color(red: 238/255, green: 238/255, blue: 238/255))
+                        .frame(width: 180, height: 50)
+                    Text("スロ禁開始")
+                }
+            }
+            .padding(.bottom, 20)
+            Button(action: {
+                timeHolder.reset()
+            }) {
+                ZStack {
+                    Rectangle()
+                        .fill(Color(red: 238/255, green: 238/255, blue: 238/255))
+                        .frame(width: 180, height: 50)
+                    Text("リセット")
+                }
+            }
             .frame(width: 180, height: 50)
             .padding(.bottom, 20)
-            MaterialButton("リセット") { timeHolder.reset() }
-            .frame(width: 180, height: 50)
         }
     }
 }

@@ -19,7 +19,6 @@
 		E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD1A12685E1AD007E3915 /* TimeHolder.swift */; };
 		E5CFC2282688538F00F746D5 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC2272688538F00F746D5 /* Footer.swift */; };
 		E5CFC2322688752200F746D5 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC2312688752200F746D5 /* TimerView.swift */; };
-		E5CFC23A268876EB00F746D5 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC239268876EB00F746D5 /* MaterialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		E53BD1A12685E1AD007E3915 /* TimeHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHolder.swift; sourceTree = "<group>"; };
 		E5CFC2272688538F00F746D5 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		E5CFC2312688752200F746D5 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		E5CFC239268876EB00F746D5 /* MaterialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +149,6 @@
 				E53BD1A12685E1AD007E3915 /* TimeHolder.swift */,
 				E5CFC2272688538F00F746D5 /* Footer.swift */,
 				E5CFC2312688752200F746D5 /* TimerView.swift */,
-				E5CFC239268876EB00F746D5 /* MaterialButton.swift */,
 			);
 			path = SlokinTimer;
 			sourceTree = "<group>";
@@ -421,7 +418,6 @@
 			files = (
 				E5CFC2322688752200F746D5 /* TimerView.swift in Sources */,
 				E53BD17626856B43007E3915 /* ContentView.swift in Sources */,
-				E5CFC23A268876EB00F746D5 /* MaterialButton.swift in Sources */,
 				E53BD17426856B43007E3915 /* SlokinTimerApp.swift in Sources */,
 				E5CFC2282688538F00F746D5 /* Footer.swift in Sources */,
 				E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */,
