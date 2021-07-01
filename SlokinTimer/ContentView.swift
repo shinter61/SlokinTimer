@@ -19,9 +19,35 @@ struct ContentView: View {
                     .padding()
                     .padding(.bottom, 50)
                     .padding(.top, 50)
-                TimerView()
-                Spacer()
-                Footer()
+                TabView {
+                    TimerView()
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "timer")
+                                Text("タイマー")
+                            }
+                            .padding()
+                        }
+                        .tag(1)
+                    Records()
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "crown")
+                                Text("記録")
+                            }
+                            .padding()
+                        }
+                        .tag(2)
+                    Titles()
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "text.book.closed")
+                                Text("称号")
+                            }
+                            .padding()
+                        }
+                        .tag(2)
+                }
             }
         }
         .onAppear { timeHolder.start() }

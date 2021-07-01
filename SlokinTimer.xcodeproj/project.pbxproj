@@ -17,8 +17,9 @@
 		E53BD18626856B44007E3915 /* SlokinTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD18526856B44007E3915 /* SlokinTimerTests.swift */; };
 		E53BD19126856B44007E3915 /* SlokinTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */; };
 		E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD1A12685E1AD007E3915 /* TimeHolder.swift */; };
-		E5CFC2282688538F00F746D5 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC2272688538F00F746D5 /* Footer.swift */; };
 		E5CFC2322688752200F746D5 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC2312688752200F746D5 /* TimerView.swift */; };
+		E5CFC24A268D4EF500F746D5 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC249268D4EF500F746D5 /* Records.swift */; };
+		E5CFC252268D532100F746D5 /* Titles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC251268D532100F746D5 /* Titles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,9 @@
 		E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlokinTimerUITests.swift; sourceTree = "<group>"; };
 		E53BD19226856B44007E3915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53BD1A12685E1AD007E3915 /* TimeHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHolder.swift; sourceTree = "<group>"; };
-		E5CFC2272688538F00F746D5 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		E5CFC2312688752200F746D5 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E5CFC249268D4EF500F746D5 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		E5CFC251268D532100F746D5 /* Titles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +149,9 @@
 				E53BD17C26856B44007E3915 /* Info.plist */,
 				E53BD17926856B44007E3915 /* Preview Content */,
 				E53BD1A12685E1AD007E3915 /* TimeHolder.swift */,
-				E5CFC2272688538F00F746D5 /* Footer.swift */,
 				E5CFC2312688752200F746D5 /* TimerView.swift */,
+				E5CFC249268D4EF500F746D5 /* Records.swift */,
+				E5CFC251268D532100F746D5 /* Titles.swift */,
 			);
 			path = SlokinTimer;
 			sourceTree = "<group>";
@@ -416,10 +419,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5CFC252268D532100F746D5 /* Titles.swift in Sources */,
+				E5CFC24A268D4EF500F746D5 /* Records.swift in Sources */,
 				E5CFC2322688752200F746D5 /* TimerView.swift in Sources */,
 				E53BD17626856B43007E3915 /* ContentView.swift in Sources */,
 				E53BD17426856B43007E3915 /* SlokinTimerApp.swift in Sources */,
-				E5CFC2282688538F00F746D5 /* Footer.swift in Sources */,
 				E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
