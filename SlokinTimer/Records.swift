@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct Records: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(
+        entity: Record.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Record.startDate, ascending: false)]
+    ) private var records: FetchedResults<Record>
+    
     var body: some View {
-        Text("records")
+        List {
+            ForEach(records) { record in
+                HStack {
+                    Text("\(record.startDate!)")
+                    Spacer()
+                    Text("\(record.span!)")
+                }
+            }
+        }
     }
 }
 

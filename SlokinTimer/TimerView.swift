@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
     @EnvironmentObject var timeHolder: TimeHolder
+    @Environment(\.managedObjectContext) private var context
     
     var body: some View {
         VStack {
@@ -29,6 +30,12 @@ struct TimerView: View {
             }
             .padding(.bottom, 20)
             Button(action: {
+                let newRecord = Record(context: context)
+                newRecord.id = UUID()
+                newRecord.startDate = timeHolder.startTimeDate()
+                newRecord.span = timeHolder.current
+                if (newRecord.startDate != nil) { try? context.save() }
+
                 timeHolder.reset()
             }) {
                 ZStack {

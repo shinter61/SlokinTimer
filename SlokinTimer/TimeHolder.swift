@@ -53,4 +53,11 @@ final class TimeHolder: ObservableObject {
         UserDefaults.standard.removeObject(forKey: self.startTimeKey)
         self.timer?.invalidate()
     }
+    
+    func startTimeDate() -> String? {
+        let startString = UserDefaults.standard.string(forKey: self.startTimeKey) ?? ""
+        if (startString == "") { return nil }
+        
+        return startString
+    }
 }
