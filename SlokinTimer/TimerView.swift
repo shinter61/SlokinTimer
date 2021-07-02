@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
     @EnvironmentObject var timeHolder: TimeHolder
+    @EnvironmentObject var titleData: TitleData
     @Environment(\.managedObjectContext) private var context
     
     var body: some View {
@@ -16,10 +17,11 @@ struct TimerView: View {
             Text(String(timeHolder.current))
                 .gradientForeground(colors: [Color(red: 182/255, green: 123/255, blue: 3/255), Color(red: 240/255, green: 215/255, blue: 8/255)])
                 .font(.system(size: 32, weight: .bold, design: .serif))
-                .padding()
-                .padding(.bottom, 50)
+                .padding(.bottom, 25)
+            Text("称号：\(titleData.getTitle())")
+                .padding(.bottom, 15)
             Button(action: {
-                timeHolder.set()
+                timeHolder.set(titleData: titleData)
             }) {
                 ZStack {
                     Rectangle()
@@ -55,5 +57,6 @@ struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView()
             .environmentObject(TimeHolder())
+            .environmentObject(TitleData())
     }
 }

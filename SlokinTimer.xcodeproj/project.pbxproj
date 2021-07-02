@@ -19,6 +19,7 @@
 		E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD1A12685E1AD007E3915 /* TimeHolder.swift */; };
 		E56C97A1268DB9790090AB36 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97A0268DB9790090AB36 /* Record+CoreDataProperties.swift */; };
 		E56C97A6268DB97C0090AB36 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97A5268DB97C0090AB36 /* Record+CoreDataClass.swift */; };
+		E56C97B1268DD1CC0090AB36 /* TitleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97B0268DD1CC0090AB36 /* TitleData.swift */; };
 		E5ABC874268D74E1008299E6 /* SlokinTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5ABC872268D74E1008299E6 /* SlokinTimer.xcdatamodeld */; };
 		E5ABC88E268D8CCE008299E6 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ABC88D268D8CCE008299E6 /* PersistenceController.swift */; };
 		E5CFC2322688752200F746D5 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CFC2312688752200F746D5 /* TimerView.swift */; };
@@ -68,6 +69,7 @@
 		E53BD1A12685E1AD007E3915 /* TimeHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHolder.swift; sourceTree = "<group>"; };
 		E56C97A0268DB9790090AB36 /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Record+CoreDataProperties.swift"; path = "/Users/shinter-pres/ghq/github.com/shinter61/SlokinTimer/SlokinTimer/Record+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		E56C97A5268DB97C0090AB36 /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Record+CoreDataClass.swift"; path = "/Users/shinter-pres/ghq/github.com/shinter61/SlokinTimer/SlokinTimer/Record+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		E56C97B0268DD1CC0090AB36 /* TitleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleData.swift; sourceTree = "<group>"; };
 		E5ABC873268D74E1008299E6 /* SlokinTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlokinTimer.xcdatamodel; sourceTree = "<group>"; };
 		E5ABC88D268D8CCE008299E6 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		E5CFC2312688752200F746D5 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				E5CFC251268D532100F746D5 /* Titles.swift */,
 				E5ABC872268D74E1008299E6 /* SlokinTimer.xcdatamodeld */,
 				E5ABC88D268D8CCE008299E6 /* PersistenceController.swift */,
+				E56C97B0268DD1CC0090AB36 /* TitleData.swift */,
 			);
 			path = SlokinTimer;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				E5CFC24A268D4EF500F746D5 /* Records.swift in Sources */,
 				E5CFC2322688752200F746D5 /* TimerView.swift in Sources */,
 				E53BD17626856B43007E3915 /* ContentView.swift in Sources */,
+				E56C97B1268DD1CC0090AB36 /* TitleData.swift in Sources */,
 				E5ABC874268D74E1008299E6 /* SlokinTimer.xcdatamodeld in Sources */,
 				E53BD17426856B43007E3915 /* SlokinTimerApp.swift in Sources */,
 				E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */,

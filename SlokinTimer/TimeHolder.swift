@@ -15,7 +15,7 @@ final class TimeHolder: ObservableObject {
     
     let startTimeKey = "start_time_key"
 
-    func start() {
+    func start(titleData: TitleData) {
         let startString = UserDefaults.standard.string(forKey: self.startTimeKey) ?? ""
         if (startString == "") { return }
         
@@ -34,19 +34,20 @@ final class TimeHolder: ObservableObject {
             diffFormatter.calendar = calendar
             diffFormatter.unitsStyle = .full
 
-            let timeDiff = calendar.dateComponents([.day, .hour, .minute, .second], from: startTimeDate, to: currentTime)
+            let timeDiff = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: startTimeDate, to: currentTime)
+            titleData.achieveTitle(span: timeDiff)
             self.current = diffFormatter.string(from: timeDiff)!
         }
     }
     
-    func set() {
+    func set(titleData: TitleData) {
         let currentTime: Date = Date()
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "ja_JP")
         formatter.dateFormat = "yy/MM/dd HH:mm:ss"
         let currentString = formatter.string(from: currentTime)
         UserDefaults.standard.set(currentString, forKey: self.startTimeKey)
-        self.start()
+        self.start(titleData: titleData)
     }
     
     func reset() {

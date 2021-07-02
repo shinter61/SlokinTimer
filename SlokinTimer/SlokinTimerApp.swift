@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct SlokinTimerApp: App {
     @StateObject private var timeHolder = TimeHolder()
+    @StateObject private var titleData = TitleData()
     let persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(timeHolder)
+                .environmentObject(titleData)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

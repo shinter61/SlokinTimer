@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var timeHolder: TimeHolder
+    @EnvironmentObject var titleData: TitleData
 
     var body: some View {
         GeometryReader { geometry in
@@ -17,7 +18,7 @@ struct ContentView: View {
                     .font(.system(size: 44, weight: .black, design: .default))
                     .gradientForeground(colors: [.red, .orange, .yellow, .green, .blue, .purple])
                     .padding()
-                    .padding(.bottom, 50)
+                    .padding(.bottom, 30)
                     .padding(.top, 50)
                 TabView {
                     TimerView()
@@ -50,7 +51,7 @@ struct ContentView: View {
                 }
             }
         }
-        .onAppear { timeHolder.start() }
+        .onAppear { timeHolder.start(titleData: titleData) }
     }
 }
 
@@ -68,5 +69,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(TimeHolder())
+            .environmentObject(TitleData())
     }
 }
