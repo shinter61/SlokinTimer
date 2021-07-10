@@ -14,6 +14,7 @@ struct TimerView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             Text(String(timeHolder.current))
                 .gradientForeground(colors: [Color(red: 182/255, green: 123/255, blue: 3/255), Color(red: 240/255, green: 215/255, blue: 8/255)])
                 .font(.system(size: 32, weight: .bold, design: .serif))
@@ -48,7 +49,21 @@ struct TimerView: View {
                 }
             }
             .frame(width: 180, height: 50)
-            .padding(.bottom, 20)
+            
+            Spacer()
+
+            HStack {
+                Spacer()
+                Button(action: {
+                    if let url = URL(string: "https://shinter61.github.io/slokinTimer.privacyPolicy.html") {
+                        UIApplication.shared.open(url)
+                    }
+                }) {
+                    Text("プライバシーポリシー")
+                        .font(.system(size: 12))
+                }
+                .padding()
+            }
         }
     }
 }
