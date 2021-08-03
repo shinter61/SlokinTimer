@@ -27,7 +27,27 @@ final class TitleData: ObservableObject {
         return UserDefaults.standard.string(forKey: "title") ?? ""
     }
 
-    func achieveTitle(span: DateComponents) {
+    func achieveTitle(span: DateComponents, start: Date, current: Date) {
+        let titleData: [String:Bool] = [
+            self.initTitle: true,
+            self.halfDayTitle: Calendar.current.date(byAdding: .hour, value: -12, to: current)! >= start,
+            self.oneDayTitle: Calendar.current.date(byAdding: .day, value: -1, to: current)! >= start,
+            self.twoDayTitle: Calendar.current.date(byAdding: .day, value: -2, to: current)! >= start,
+            self.threeDayTitle: Calendar.current.date(byAdding: .day, value: -3, to: current)! >= start,
+            self.oneWeekTitle: Calendar.current.date(byAdding: .day, value: -7, to: current)! >= start,
+            self.twoWeekTitle: Calendar.current.date(byAdding: .day, value: -7*2, to: current)! >= start,
+            self.threeWeekTitle: Calendar.current.date(byAdding: .day, value: -7*3, to: current)! >= start,
+            self.oneMonthTitle: Calendar.current.date(byAdding: .month, value: -1, to: current)! >= start,
+            self.twoMonthTitle: Calendar.current.date(byAdding: .month, value: -2, to: current)! >= start,
+            self.threeMonthTitle: Calendar.current.date(byAdding: .month, value: -3, to: current)! >= start,
+            self.sixMonthTitle: Calendar.current.date(byAdding: .month, value: -6, to: current)! >= start,
+            self.nineMonthTitle: Calendar.current.date(byAdding: .month, value: -9, to: current)! >= start,
+            self.oneYearTitle: Calendar.current.date(byAdding: .year, value: -1, to: current)! >= start,
+        ]
+        for (key, isAchieved) in titleData {
+            if (isAchieved) { UserDefaults.standard.set(true, forKey: key) }
+        }
+        
         var title = ""
         if (span.year! >= 1) { title = self.oneYearTitle }
         else if (span.month! >= 9) { title = self.nineMonthTitle }
@@ -44,8 +64,6 @@ final class TitleData: ObservableObject {
         else if (span.hour! >= 12) { title = self.halfDayTitle }
         else { title = self.initTitle }
         
-
-        UserDefaults.standard.set(true, forKey: title)
         UserDefaults.standard.set(title, forKey: "title")
     }
 }

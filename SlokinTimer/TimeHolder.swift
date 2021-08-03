@@ -35,7 +35,7 @@ final class TimeHolder: ObservableObject {
             diffFormatter.unitsStyle = .full
 
             let timeDiff = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: startTimeDate, to: currentTime)
-            titleData.achieveTitle(span: timeDiff)
+            titleData.achieveTitle(span: timeDiff, start: startTimeDate, current: currentTime)
             self.current = diffFormatter.string(from: timeDiff)!
         }
     }

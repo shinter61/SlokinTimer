@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftMaterialUI",
+        "repositoryURL": "https://github.com/shinter61/SwiftMaterialUI/",
+        "state": {
+          "branch": null,
+          "revision": "acaa277da9001aca957816c3df5fb0e2129f228e",
+          "version": "0.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

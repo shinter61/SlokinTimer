@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		E53BD18626856B44007E3915 /* SlokinTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD18526856B44007E3915 /* SlokinTimerTests.swift */; };
 		E53BD19126856B44007E3915 /* SlokinTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */; };
 		E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD1A12685E1AD007E3915 /* TimeHolder.swift */; };
+		E55DCC34269A406E00A50916 /* SwiftMaterialUI in Frameworks */ = {isa = PBXBuildFile; productRef = E55DCC33269A406E00A50916 /* SwiftMaterialUI */; };
 		E56C97A1268DB9790090AB36 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97A0268DB9790090AB36 /* Record+CoreDataProperties.swift */; };
 		E56C97A6268DB97C0090AB36 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97A5268DB97C0090AB36 /* Record+CoreDataClass.swift */; };
 		E56C97B1268DD1CC0090AB36 /* TitleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97B0268DD1CC0090AB36 /* TitleData.swift */; };
@@ -83,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7738621963118E92AD42BF47 /* Pods_SlokinTimer.framework in Frameworks */,
+				E55DCC34269A406E00A50916 /* SwiftMaterialUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +217,9 @@
 			dependencies = (
 			);
 			name = SlokinTimer;
+			packageProductDependencies = (
+				E55DCC33269A406E00A50916 /* SwiftMaterialUI */,
+			);
 			productName = SlokinTimer;
 			productReference = E53BD17026856B43007E3915 /* SlokinTimer.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +294,9 @@
 				Base,
 			);
 			mainGroup = E53BD16726856B43007E3915;
+			packageReferences = (
+				E55DCC32269A406E00A50916 /* XCRemoteSwiftPackageReference "SwiftMaterialUI" */,
+			);
 			productRefGroup = E53BD17126856B43007E3915 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -764,6 +772,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E55DCC32269A406E00A50916 /* XCRemoteSwiftPackageReference "SwiftMaterialUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shinter61/SwiftMaterialUI/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E55DCC33269A406E00A50916 /* SwiftMaterialUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55DCC32269A406E00A50916 /* XCRemoteSwiftPackageReference "SwiftMaterialUI" */;
+			productName = SwiftMaterialUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E5ABC872268D74E1008299E6 /* SlokinTimer.xcdatamodeld */ = {
