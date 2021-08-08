@@ -17,7 +17,7 @@
 		E53BD18626856B44007E3915 /* SlokinTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD18526856B44007E3915 /* SlokinTimerTests.swift */; };
 		E53BD19126856B44007E3915 /* SlokinTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD19026856B44007E3915 /* SlokinTimerUITests.swift */; };
 		E53BD1A22685E1AD007E3915 /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BD1A12685E1AD007E3915 /* TimeHolder.swift */; };
-		E55DCC34269A406E00A50916 /* SwiftMaterialUI in Frameworks */ = {isa = PBXBuildFile; productRef = E55DCC33269A406E00A50916 /* SwiftMaterialUI */; };
+		E55DCC34269A406E00A50916 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E55DCC33269A406E00A50916 /* SwiftPackageProductDependency */; };
 		E56C97A1268DB9790090AB36 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97A0268DB9790090AB36 /* Record+CoreDataProperties.swift */; };
 		E56C97A6268DB97C0090AB36 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97A5268DB97C0090AB36 /* Record+CoreDataClass.swift */; };
 		E56C97B1268DD1CC0090AB36 /* TitleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C97B0268DD1CC0090AB36 /* TitleData.swift */; };
@@ -84,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7738621963118E92AD42BF47 /* Pods_SlokinTimer.framework in Frameworks */,
-				E55DCC34269A406E00A50916 /* SwiftMaterialUI in Frameworks */,
+				E55DCC34269A406E00A50916 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +210,6 @@
 				E53BD16C26856B43007E3915 /* Sources */,
 				E53BD16D26856B43007E3915 /* Frameworks */,
 				E53BD16E26856B43007E3915 /* Resources */,
-				EBF93F3D18CCF006F7AD20CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,7 +217,7 @@
 			);
 			name = SlokinTimer;
 			packageProductDependencies = (
-				E55DCC33269A406E00A50916 /* SwiftMaterialUI */,
+				E55DCC33269A406E00A50916 /* SwiftPackageProductDependency */,
 			);
 			productName = SlokinTimer;
 			productReference = E53BD17026856B43007E3915 /* SlokinTimer.app */;
@@ -251,7 +250,6 @@
 				E53BD18826856B44007E3915 /* Sources */,
 				E53BD18926856B44007E3915 /* Frameworks */,
 				E53BD18A26856B44007E3915 /* Resources */,
-				609A4DFCA0F9938A1BFE5913 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,7 +293,7 @@
 			);
 			mainGroup = E53BD16726856B43007E3915;
 			packageReferences = (
-				E55DCC32269A406E00A50916 /* XCRemoteSwiftPackageReference "SwiftMaterialUI" */,
+				E55DCC32269A406E00A50916 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = E53BD17126856B43007E3915 /* Products */;
 			projectDirPath = "";
@@ -357,23 +355,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		609A4DFCA0F9938A1BFE5913 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer-SlokinTimerUITests/Pods-SlokinTimer-SlokinTimerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D5669A57CE835F8673C78DA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,23 +397,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EBF93F3D18CCF006F7AD20CF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlokinTimer/Pods-SlokinTimer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -612,6 +576,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SlokinTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = AKQMM94SB8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SlokinTimer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -634,6 +599,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SlokinTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = AKQMM94SB8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SlokinTimer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -774,7 +740,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E55DCC32269A406E00A50916 /* XCRemoteSwiftPackageReference "SwiftMaterialUI" */ = {
+		E55DCC32269A406E00A50916 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/shinter61/SwiftMaterialUI/";
 			requirement = {
@@ -785,9 +751,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E55DCC33269A406E00A50916 /* SwiftMaterialUI */ = {
+		E55DCC33269A406E00A50916 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E55DCC32269A406E00A50916 /* XCRemoteSwiftPackageReference "SwiftMaterialUI" */;
+			package = E55DCC32269A406E00A50916 /* RemoteSwiftPackageReference */;
 			productName = SwiftMaterialUI;
 		};
 /* End XCSwiftPackageProductDependency section */
